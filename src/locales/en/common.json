@@ -1,0 +1,300 @@
+{
+  "header": {
+    "services": "Services",
+    "process": "Process",
+    "pricing": "Pricing",
+    "references": "References",
+    "system-check": "System Check",
+    "book-demo": "Book Demo"
+  },
+  "hero": {
+    "design-automation-ai": "Design. Automation. AI.",
+    "your-digital-upgrade": "Your Digital Upgrade.",
+    "partner-for-smart-processes": "TheFiles.io is your partner for smart processes and customized AI solutions – scalable & efficient.",
+    "learn-more": "Learn more"
+  },
+  "pricing": {
+    "our-packages": "Our Packages",
+    "we-build-systems": "We build systems that automate, learn, and think ahead.",
+    "select": "Let's begin"
+  },
+  "packages": {
+    "webpage": {
+      "title": "Webpage Package",
+      "description": "For companies that want a clear, modern appearance",
+      "price": "from €499",
+      "features": [
+        "Responsive Website (up to 5 pages)",
+        "Mobile & SEO optimized",
+        "Structured design logic",
+        "1x Strategy call for site structure",
+        "Optional: Extendable with CMS, animation & add-ons"
+      ]
+    },
+    "outreach": {
+      "title": "Old Lead Outreach Package",
+      "description": "For companies looking to reactivate old contacts",
+      "price": "from €49 per appointment",
+      "features": [
+        "Setup of outreach flow (Email + LinkedIn)",
+        "Text templates, follow-up logic, CRM connection",
+        "Integration with HubSpot / Make / Clay",
+        "Pay-per-appointment model: → You only pay for qualified appointments",
+        "Optional: KPI dashboard & analytics"
+      ]
+    },
+    "chatbot": {
+      "title": "Chatbot Integration Package",
+      "description": "For companies looking to automate processes with GPT",
+      "price": "from €999",
+      "features": [
+        "Custom GPT chatbot (e.g., support, sales, consulting)",
+        "Integration in website, CRM or messenger",
+        "Data connection: FAQ, Google Sheets, Notion, etc.",
+        "Onboarding & training included",
+        "Optional: Monitoring dashboard & reporting automation"
+      ]
+    }
+  },
+  "services": {
+    "title": "Our Solution",
+    "subtitle": "\"We don't just deliver design – we build systems that think.\"",
+    "webdesign": {
+      "title": "Webdesign",
+      "description": "Mobile, SEO-ready & CI-compliant"
+    },
+    "automation": {
+      "title": "Automation",
+      "description": "CRM, Mail flows, Lead triggers"
+    },
+    "ai-agents": {
+      "title": "AI Agents",
+      "description": "GPT-powered bots & tools"
+    }
+  },
+  "process": {
+    "title": "How It Works",
+    "subtitle": "Our simple process for your digital upgrade",
+    "steps": [
+      {
+        "title": "Book a Demo",
+        "description": "Book a no-obligation 15-minute appointment and learn more about our solutions."
+      },
+      {
+        "title": "Clarify Goals",
+        "description": "We analyze your requirements and jointly define the ideal solution for your company."
+      },
+      {
+        "title": "Setup in 7 Days",
+        "description": "Within a week, we implement the first solutions and present the results to you."
+      },
+      {
+        "title": "Scale Results",
+        "description": "After successful implementation, we continuously optimize and scale the results."
+      }
+    ],
+    "start-now": "Start Now"
+  },
+  "footer": {
+    "description": "TheFiles is your partner for smart processes and individual AI solutions – scalable & efficient.",
+    "services": "Services",
+    "social-media": "Social Media",
+    "contact": "Contact",
+    "rights-reserved": "© {year} TheFiles. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "imprint": "Imprint"
+  },
+  "system-check": {
+    "welcome": {
+      "title": "Let's quickly check where you stand",
+      "description": "We'll show you in 2 minutes what has potential in your system – free & smart.",
+      "start": "Let's go"
+    },
+    "success": {
+      "title": "🧠 Your check is running!",
+      "description": "We'll be in touch shortly with insights & proposals.\nCheck your spam folders too.",
+      "close": "Close"
+    },
+    "contact": {
+      "title": "Contact Details",
+      "subtitle": "How can we reach you?",
+      "options": [
+        "Email",
+        "WhatsApp",
+        "Phone",
+        "Slack / Teams",
+        "Other"
+      ],
+      "other-placeholder": "Describe your preferred contact method...",
+      "name": "Name",
+      "name-placeholder": "Your name",
+      "email": "Email",
+      "email-placeholder": "Your email address",
+      "phone": "Phone",
+      "phone-placeholder": "Your phone number (optional)",
+      "desired-outcome": "Desired outcome",
+      "desired-outcome-placeholder": "Describe your desired outcome...",
+      "privacy-consent": "I have read the privacy policy and agree that my data may be used to contact me and to create an individual proposal.",
+      "submit": "Submit"
+    },
+    "company": {
+      "title": "Company Information",
+      "industries": [
+        "E-Commerce",
+        "Marketing",
+        "Advertising",
+        "Media",
+        "Software Development",
+        "IT Services",
+        "Consulting",
+        "Startups",
+        "Agencies",
+        "Education",
+        "Healthcare",
+        "Real Estate",
+        "Financial Services",
+        "Retail",
+        "Wholesale",
+        "Tourism",
+        "Gastronomy",
+        "Public Administration",
+        "Other industry"
+      ],
+      "team-sizes": [
+        "1–5",
+        "6–20",
+        "21–50",
+        "51+"
+      ],
+      "company-name": "Company name",
+      "website": "Website (optional)",
+      "website-placeholder": "https://",
+      "industry": "Industry",
+      "location": "Location (optional)",
+      "team-size": "Number of employees"
+    },
+    "revenue": {
+      "title": "Company Size (Economic)",
+      "description": "To better assess your company size – optional, but helpful for recommending suitable solutions.",
+      "options": [
+        "< €5,000 monthly revenue",
+        "€5,000–20,000 monthly revenue",
+        "€20,000–50,000 monthly revenue",
+        "> €50,000 monthly revenue",
+        "Don't know / prefer not to say"
+      ]
+    },
+    "optimization": {
+      "title": "What should run better for you?",
+      "description": "What do you want to optimize or simplify?",
+      "options": [
+        "Customer inquiries & leads",
+        "Appointment booking",
+        "Email communication",
+        "Invoices & quotes",
+        "Document management",
+        "Social media",
+        "Support / chatbot",
+        "Internal processes",
+        "Design / branding",
+        "Website / landing pages",
+        "Other"
+      ],
+      "other-placeholder": "Describe the area..."
+    },
+    "priority": {
+      "title": "Priority & Desired Goal",
+      "description": "What is most important to you right now?",
+      "options": [
+        "Time savings",
+        "More leads / revenue",
+        "Customer satisfaction",
+        "Overview & control",
+        "Professional appearance",
+        "Other"
+      ],
+      "other-placeholder": "Describe your priority...",
+      "desired-outcome": "What would be a perfect outcome of our system check for you?",
+      "desired-outcome-placeholder": "Describe your desired outcome..."
+    },
+    "blockers": {
+      "title": "What is currently blocking you the most?",
+      "description": "Name 1–2 specific time wasters or problems from your daily routine",
+      "label": "Your biggest challenges",
+      "placeholder": "e.g. Creating quotes takes too long, appointment coordination is chaotic, etc."
+    },
+    "acquisition": {
+      "title": "How do you currently acquire new customers or inquiries?",
+      "description": "e.g. via website, Instagram, referrals, trade fairs, cold calling, etc.",
+      "label": "Your customer acquisition",
+      "placeholder": "Briefly describe how you acquire new customers..."
+    },
+    "next": "Next"
+  },
+  "testimonials": [
+    {
+      "text": "TheFiles.io created an immersive website for us that takes our brand to a whole new level. The collaboration was professional, creative, and absolutely efficient.",
+      "name": "Coco",
+      "company": "VividIntel"
+    }
+  ],
+  "tools-section": {
+    "title": "Our Tools & Technologies",
+    "subtitle": "Technology is not an end in itself – for us, it's a driver of impact."
+  },
+  "cta-section": {
+    "title": "Ready for your digital upgrade?",
+    "subtitle": "We deliver structure, systems, and scalability – no buzzwords.",
+    "button": "Book a free demo now!"
+  },
+  "testimonials-section": {
+    "title": "What our clients say",
+    "subtitle": "Experiences from companies already working with TheFiles.io"
+  },
+  "hero-section": {
+    "headline1": "Design. Automation. AI.",
+    "headline2": "Your digital upgrade.",
+    "subtitle": "TheFiles is your partner for smart processes and customized AI solutions – scalable & efficient."
+  },
+  "buttons": {
+    "book-demo": "Book demo",
+    "system-check": "System check",
+    "learn-more": "Learn more"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "1_overview_title": "1. Data Protection at a Glance",
+    "1_overview_text": "The following notes provide a simple overview of what happens to your personal data when you visit this website. Personal data is any data with which you can be personally identified. Detailed information on data protection can be found in our privacy policy listed below this text.",
+    "data_collection_title": "Data Collection on This Website",
+    "data_collection_text": "The data processing on this website is carried out by the website operator. The operator's contact details can be found in the imprint of this website.",
+    "2_general_info_title": "2. General Notes and Mandatory Information",
+    "2_general_info_text": "The operators of these pages take the protection of your personal data very seriously. We treat your data confidentially and in accordance with the statutory data protection regulations and this privacy policy.",
+    "3_data_collection_title": "3. Data Collection on This Website",
+    "cookies_title": "Cookies",
+    "cookies_text": "Our website uses cookies. These are small text files that your web browser stores on your device. Cookies help us make our offer more user-friendly, effective, and secure.",
+    "4_plugins_tools_title": "4. Plugins and Tools",
+    "web_fonts_title": "Web Fonts",
+    "web_fonts_text": "This site uses so-called web fonts for the uniform display of fonts. When you call up a page, your browser loads the required fonts into its cache to display texts correctly.",
+    "5_analytics_title": "5. Analytics Tools and Advertising",
+    "google_analytics_title": "Google Analytics",
+    "google_analytics_text": "This website uses functions of the web analytics service Google Analytics. The provider is Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.",
+    "6_newsletter_title": "6. Newsletter",
+    "newsletter_data_title": "Newsletter Data",
+    "newsletter_data_text": "If you would like to receive the newsletter offered on the website, we require an email address from you as well as information that allows us to verify that you are the owner of the specified email address and agree to receive the newsletter."
+  },
+  "imprint": {
+    "title": "Imprint",
+    "provider_info_title": "Information according to § 5 TMG:",
+    "name": "Mert Hasan Demir",
+    "address": "Kronprinzenstraße 18\n47229 Duisburg\nGermany",
+    "contact_title": "Contact:",
+    "phone": "Phone: +49 1525 8736856",
+    "email": "E-Mail: hello@thefiles.io",
+    "responsible_title": "Responsible for content according to § 55 Abs. 2 RStV:",
+    "responsible_name": "Mert Hasan Demir",
+    "responsible_address": "Kronprinzenstraße 18\n47229 Duisburg",
+    "online_dispute_title": "Online Dispute Resolution:",
+    "online_dispute_text": "The European Commission provides a platform for online dispute resolution (ODR):",
+    "online_dispute_link": "https://ec.europa.eu/consumers/odr/"
+  }
+}

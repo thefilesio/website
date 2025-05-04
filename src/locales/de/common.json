@@ -1,0 +1,300 @@
+{
+  "header": {
+    "services": "Services",
+    "process": "Prozess",
+    "pricing": "Preise",
+    "references": "Referenzen",
+    "system-check": "System-Check",
+    "book-demo": "Demo buchen"
+  },
+  "hero": {
+    "design-automation-ai": "Design. Automation. KI.",
+    "your-digital-upgrade": "Dein digitales Upgrade.",
+    "partner-for-smart-processes": "TheFiles.io ist dein Partner für smarte Prozesse und individuelle KI-Lösungen – skalierbar & effizient.",
+    "learn-more": "Mehr erfahren"
+  },
+  "pricing": {
+    "our-packages": "Unsere Pakete",
+    "we-build-systems": "Wir bauen Systeme, die automatisieren, lernen und mitdenken.",
+    "select": "Jetzt starten"
+  },
+  "packages": {
+    "webpage": {
+      "title": "Webpage Paket",
+      "description": "Für Unternehmen, die einen klaren, modernen Auftritt wollen",
+      "price": "ab 499 €",
+      "features": [
+        "Responsive Website (bis 5 Seiten)",
+        "Mobil- & SEO-optimiert",
+        "Strukturierte Design-Logik",
+        "1x Strategie-Call zur Seitenstruktur",
+        "Optional: Erweiterbar um CMS, Animation & Add-ons"
+      ]
+    },
+    "outreach": {
+      "title": "Old Lead Outreach Paket",
+      "description": "Für Unternehmen, die alte Kontakte wieder aktivieren wollen",
+      "price": "ab 49 € pro Termin",
+      "features": [
+        "Setup eines Outreach-Flows (E-Mail + LinkedIn)",
+        "Textvorlagen, Follow-up-Logik, CRM-Anbindung",
+        "Integration mit HubSpot / Make / Clay",
+        "Pay-per-Appointment Modell: → Du zahlst nur für qualifizierte Termine",
+        "Optional: KPI-Dashboard & Analytics"
+      ]
+    },
+    "chatbot": {
+      "title": "Chatbot Integration Paket",
+      "description": "Für Unternehmen, die Prozesse mit GPT automatisieren möchten",
+      "price": "ab 999 €",
+      "features": [
+        "Custom GPT-Chatbot (z. B. Support, Vertrieb, Beratung)",
+        "Integration in Website, CRM oder Messenger",
+        "Daten-Anbindung: FAQ, Google Sheets, Notion etc.",
+        "Onboarding & Training inklusive",
+        "Optional: Monitoring-Dashboard & Reporting-Automation"
+      ]
+    }
+  },
+  "services": {
+    "title": "Unsere Lösung",
+    "subtitle": "\"Wir liefern nicht nur Design – wir bauen Systeme, die mitdenken.\"",
+    "webdesign": {
+      "title": "Webdesign",
+      "description": "Mobil, SEO-ready & CI-konform"
+    },
+    "automation": {
+      "title": "Automation",
+      "description": "CRM, Mailflows, Lead-Trigger"
+    },
+    "ai-agents": {
+      "title": "KI-Agenten",
+      "description": "GPT-gestützte Bots & Tools"
+    }
+  },
+  "process": {
+    "title": "So funktioniert's",
+    "subtitle": "Unser einfacher Prozess für Ihr digitales Upgrade",
+    "steps": [
+      {
+        "title": "Demo buchen",
+        "description": "Buchen Sie einen unverbindlichen 15-minütigen Termin und erfahren Sie mehr über unsere Lösungen."
+      },
+      {
+        "title": "Ziele klären",
+        "description": "Wir analysieren Ihre Anforderungen und definieren gemeinsam die ideale Lösung für Ihr Unternehmen."
+      },
+      {
+        "title": "Setup in 7 Tagen",
+        "description": "Innerhalb einer Woche implementieren wir die ersten Lösungen und stellen Ihnen die Ergebnisse vor."
+      },
+      {
+        "title": "Ergebnisse skalieren",
+        "description": "Nach erfolgreicher Implementierung optimieren und skalieren wir die Ergebnisse kontinuierlich."
+      }
+    ],
+    "start-now": "Jetzt starten"
+  },
+  "footer": {
+    "description": "TheFiles ist dein Partner für smarte Prozesse und individuelle KI-Lösungen – skalierbar & effizient.",
+    "services": "Services",
+    "social-media": "Soziale Medien",
+    "contact": "Kontakt",
+    "rights-reserved": "© {year} TheFiles. Alle Rechte vorbehalten.",
+    "privacy": "Datenschutzerklärung",
+    "imprint": "Impressum"
+  },
+  "system-check": {
+    "welcome": {
+      "title": "Lass uns kurz prüfen, wo du gerade stehst",
+      "description": "Wir zeigen dir in 2 Minuten, was in deinem System Potenzial hat – kostenlos & smart.",
+      "start": "Los geht's"
+    },
+    "success": {
+      "title": "🧠 Dein Check läuft!",
+      "description": "Wir melden uns in Kürze mit Insights & Vorschlag bei dir.\nCheck auch deine Spam-Ordner.",
+      "close": "Schließen"
+    },
+    "contact": {
+      "title": "Kontaktdaten",
+      "subtitle": "Wie können wir dich erreichen?",
+      "options": [
+        "E-Mail",
+        "WhatsApp",
+        "Telefon",
+        "Slack / Teams",
+        "Sonstiges"
+      ],
+      "other-placeholder": "Deine bevorzugte Kontaktart beschreiben...",
+      "name": "Name",
+      "name-placeholder": "Dein Name",
+      "email": "E-Mail",
+      "email-placeholder": "Deine E-Mail-Adresse",
+      "phone": "Telefon",
+      "phone-placeholder": "Deine Telefonnummer (optional)",
+      "desired-outcome": "Wunsch-Ergebnis",
+      "desired-outcome-placeholder": "Beschreibe dein Wunsch-Ergebnis...",
+      "privacy-consent": "Ich habe die Datenschutzerklärung gelesen und bin damit einverstanden, dass meine Daten zur Kontaktaufnahme und zur Erstellung eines individuellen Vorschlags verwendet werden.",
+      "submit": "Absenden"
+    },
+    "company": {
+      "title": "Unternehmensinformationen",
+      "industries": [
+        "E-Commerce",
+        "Marketing",
+        "Werbung",
+        "Medien",
+        "Softwareentwicklung",
+        "IT-Dienstleistungen",
+        "Beratung / Consulting",
+        "Startups",
+        "Agenturen",
+        "Bildung",
+        "Gesundheitswesen",
+        "Immobilienwirtschaft",
+        "Finanzdienstleistungen",
+        "Einzelhandel",
+        "Großhandel",
+        "Tourismus",
+        "Gastronomie",
+        "Öffentliche Verwaltung",
+        "Sonstige Branche"
+      ],
+      "team-sizes": [
+        "1–5",
+        "6–20",
+        "21–50",
+        "51+"
+      ],
+      "company-name": "Firmenname",
+      "website": "Website (optional)",
+      "website-placeholder": "https://",
+      "industry": "Branche",
+      "location": "Standort (optional)",
+      "team-size": "Anzahl Mitarbeitende"
+    },
+    "revenue": {
+      "title": "Unternehmensgröße (wirtschaftlich)",
+      "description": "Zur besseren Einschätzung deiner Unternehmensgröße – optional, aber hilfreich für die Empfehlung passender Lösungen.",
+      "options": [
+        "< 5.000 € Monatsumsatz",
+        "5.000–20.000 € Monatsumsatz",
+        "20.000–50.000 € Monatsumsatz",
+        "> 50.000 € Monatsumsatz",
+        "Weiß ich nicht / möchte ich nicht angeben"
+      ]
+    },
+    "next": "Weiter",
+    "optimization": {
+      "title": "Was soll bei dir besser laufen?",
+      "description": "Was möchtest du optimieren oder vereinfachen?",
+      "options": [
+        "Kundenanfragen & Leads",
+        "Terminbuchung",
+        "E-Mail-Kommunikation",
+        "Rechnungen & Angebote",
+        "Dokumentenmanagement",
+        "Social Media",
+        "Support / Chatbot",
+        "interne Prozesse",
+        "Design / Branding",
+        "Website / Landingpages",
+        "Sonstiges"
+      ],
+      "other-placeholder": "Beschreibe den Bereich..."
+    },
+    "priority": {
+      "title": "Priorität & Wunschziel",
+      "description": "Was ist dir aktuell am wichtigsten?",
+      "options": [
+        "Zeitersparnis",
+        "Mehr Leads / Umsatz",
+        "Kundenzufriedenheit",
+        "Übersicht & Kontrolle",
+        "Professioneller Außenauftritt",
+        "Sonstiges"
+      ],
+      "other-placeholder": "Deine Priorität beschreiben...",
+      "desired-outcome": "Was wäre für dich ein perfektes Ergebnis unseres System-Checks?",
+      "desired-outcome-placeholder": "Beschreibe dein Wunsch-Ergebnis..."
+    },
+    "blockers": {
+      "title": "Was blockiert dich aktuell am meisten?",
+      "description": "Nenne 1–2 konkrete Zeitfresser oder Probleme aus deinem Alltag",
+      "label": "Deine größten Herausforderungen",
+      "placeholder": "z.B. Angebote erstellen dauert zu lange, Terminkoordination ist chaotisch, etc."
+    },
+    "acquisition": {
+      "title": "Wie gewinnst du aktuell neue Kunden oder Anfragen?",
+      "description": "z.B. über Website, Instagram, Empfehlungen, Messen, Telefonakquise etc.",
+      "label": "Deine Kundengewinnung",
+      "placeholder": "Beschreibe kurz, wie du neue Kunden gewinnst..."
+    }
+  },
+  "testimonials": [
+    {
+      "text": "TheFiles.io hat für uns eine immersive Website erschaffen, die unsere Marke auf ein völlig neues Level hebt. Die Zusammenarbeit war professionell, kreativ und absolut effizient.",
+      "name": "Coco",
+      "company": "VividIntel"
+    }
+  ],
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "1_overview_title": "1. Datenschutz auf einen Blick",
+    "1_overview_text": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.",
+    "data_collection_title": "Datenerfassung auf dieser Website",
+    "data_collection_text": "Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.",
+    "2_general_info_title": "2. Allgemeine Hinweise und Pflichtinformationen",
+    "2_general_info_text": "Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.",
+    "3_data_collection_title": "3. Datenerfassung auf dieser Website",
+    "cookies_title": "Cookies",
+    "cookies_text": "Unsere Website verwendet Cookies. Das sind kleine Textdateien, die Ihr Webbrowser auf Ihrem Endgerät speichert. Cookies helfen uns dabei, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen.",
+    "4_plugins_tools_title": "4. Plugins und Tools",
+    "web_fonts_title": "Web Fonts",
+    "web_fonts_text": "Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten sogenannte Web Fonts. Beim Aufruf einer Seite lädt Ihr Browser die benötigten Fonts in ihren Cache, um Texte korrekt anzuzeigen.",
+    "5_analytics_title": "5. Analyse-Tools und Werbung",
+    "google_analytics_title": "Google Analytics",
+    "google_analytics_text": "Diese Website nutzt Funktionen des Webanalysedienstes Google Analytics. Anbieter ist die Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.",
+    "6_newsletter_title": "6. Newsletter",
+    "newsletter_data_title": "Newsletterdaten",
+    "newsletter_data_text": "Wenn Sie den auf der Website angebotenen Newsletter beziehen möchten, benötigen wir von Ihnen eine E-Mail-Adresse sowie Informationen, welche uns die Überprüfung gestatten, dass Sie der Inhaber der angegebenen Adresse sind und mit dem Empfang des Newsletters einverstanden sind."
+  },
+  "imprint": {
+    "title": "Impressum",
+    "provider_info_title": "Angaben gemäß § 5 TMG:",
+    "name": "Mert Hasan Demir",
+    "address": "Kronprinzenstraße 18\n47229 Duisburg\nDeutschland",
+    "contact_title": "Kontakt:",
+    "phone": "Telefon: +49 1525 8736856",
+    "email": "E-Mail: hello@thefiles.io",
+    "responsible_title": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:",
+    "responsible_name": "Mert Hasan Demir",
+    "responsible_address": "Kronprinzenstraße 18\n47229 Duisburg",
+    "online_dispute_title": "Online-Streitbeilegung:",
+    "online_dispute_text": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:",
+    "online_dispute_link": "https://ec.europa.eu/consumers/odr/"
+  },
+  "hero-section": {
+    "headline1": "Design. Automation. KI.",
+    "headline2": "Dein digitales Upgrade.",
+    "subtitle": "TheFiles ist dein Partner für smarte Prozesse und individuelle KI-Lösungen – skalierbar & effizient."
+  },
+  "testimonials-section": {
+    "title": "Was unsere Kunden sagen",
+    "subtitle": "Erfahrungen von Unternehmen, die bereits mit TheFiles.io arbeiten."
+  },
+  "tools-section": {
+    "title": "Unsere Tools & Technologien",
+    "subtitle": "Technologie ist kein Selbstzweck – bei uns ist sie Wirkungsträger."
+  },
+  "cta-section": {
+    "title": "Bereit für dein digitales Upgrade?",
+    "subtitle": "Wir liefern Struktur, Systeme und Skalierbarkeit – keine Buzzwords.",
+    "button": "Jetzt kostenlose Demo buchen!"
+  },
+  "buttons": {
+    "book-demo": "Demo buchen",
+    "system-check": "System-Check",
+    "learn-more": "Mehr erfahren"
+  }
+}
