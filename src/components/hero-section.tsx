@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from "react";
 import { ButterflyLogo } from "@/components/butterfly-logo";
 import { Button } from "@/components/ui/button";
@@ -9,21 +11,28 @@ import { useLanguage } from "@/lib/language-context";
 export function HeroSection() {
   const [showSystemCheck, setShowSystemCheck] = useState(false);
   const { t } = useLanguage();
-  
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 pt-[100px] pb-10 overflow-hidden">
+    <section
+      className="relative min-h-screen flex items-center justify-center px-6 pt-[100px] pb-10 overflow-hidden"
+      aria-label="TheFiles.io Hero Section"
+    >
       <FloatingShapes />
-      
+
       <div className="container max-w-6xl mx-auto flex flex-col items-center text-center">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight leading-tight">
-          <span className="block">{t('hero-section.headline1')}</span>
-          <span className="text-primary">{t('hero-section.headline2')}</span>
+          <span className="block">{t('hero-section.headline1') || 'Design. Automation. KI.'}</span>
+          <span className="text-primary">{t('hero-section.headline2') || 'Das digitale Upgrade für dein Unternehmen.'}</span>
         </h1>
-        
+
+        <h2 className="text-xl md:text-2xl text-foreground/80 mb-4">
+          {t('hero-section.subheadline') || 'Wir gestalten moderne Websites, automatisieren Prozesse und integrieren KI – schnell, klar und messbar.'}
+        </h2>
+
         <p className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mb-10">
-          {t('hero-section.subtitle')}
+          {t('hero-section.subtitle') || 'Für Startups & KMU, die mit System statt Zufall wachsen wollen.'}
         </p>
-        
+
         <div className="flex flex-col sm:flex-row gap-4 mb-16">
           <a 
             href="https://cal.com/thefiles.io/demo?overlayCalendar=true"
@@ -54,7 +63,7 @@ export function HeroSection() {
             {t('buttons.system-check')}
           </Button>
         </div>
-        
+
         <a 
           href="#services" 
           className="animate-bounce flex flex-col items-center text-sm text-foreground/60 hover:text-primary transition-colors"
@@ -65,7 +74,7 @@ export function HeroSection() {
           </svg>
         </a>
       </div>
-      
+
       <SystemCheckDialog
         open={showSystemCheck}
         onOpenChange={setShowSystemCheck}
