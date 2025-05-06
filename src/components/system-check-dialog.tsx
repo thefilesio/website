@@ -134,9 +134,9 @@ export function SystemCheckDialog({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-[95vw] sm:max-w-xl w-full mx-auto p-0 overflow-hidden bg-white/90 backdrop-blur-lg border border-white/20 shadow-lg rounded-2xl">
+      <DialogContent className="max-w-[95vw] sm:max-w-xl w-full mx-auto p-0 overflow-hidden bg-white/90 backdrop-blur-lg border border-white/20 shadow-lg rounded-2xl max-h-[90vh] flex flex-col">
         <DialogTitle className="sr-only">System-Check</DialogTitle>
-        <div className="p-6">
+        <div className="p-6 overflow-y-auto flex-1">
           {step === "welcome" && (
             <SystemCheckWelcome onNext={handleNext} />
           )}

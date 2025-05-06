@@ -32,10 +32,34 @@ export function ChatWidget({ systemCheckOpen = false }: { systemCheckOpen?: bool
         if (window.AIChatWidget) {
           window.AIChatWidget.init({ widgetId: "681a2152de07ab4c428ab832" });
         }
+        // Nach dem Laden: Icon kleiner machen und Position anpassen
+        setTimeout(() => {
+          const icon = document.querySelector('[id^="AIChatWidget"] button');
+          if (icon) {
+            (icon as HTMLElement).style.width = '36px';
+            (icon as HTMLElement).style.height = '36px';
+            (icon as HTMLElement).style.minWidth = '36px';
+            (icon as HTMLElement).style.minHeight = '36px';
+            (icon as HTMLElement).style.right = '16px';
+            (icon as HTMLElement).style.bottom = '16px';
+          }
+        }, 500);
       };
       document.body.appendChild(script);
     } else if (window.AIChatWidget) {
       window.AIChatWidget.init({ widgetId: "681a2152de07ab4c428ab832" });
+      // Nachträglich Icon kleiner machen und Position anpassen
+      setTimeout(() => {
+        const icon = document.querySelector('[id^="AIChatWidget"] button');
+        if (icon) {
+          (icon as HTMLElement).style.width = '36px';
+          (icon as HTMLElement).style.height = '36px';
+          (icon as HTMLElement).style.minWidth = '36px';
+          (icon as HTMLElement).style.minHeight = '36px';
+          (icon as HTMLElement).style.right = '16px';
+          (icon as HTMLElement).style.bottom = '16px';
+        }
+      }, 500);
     }
   }, [systemCheckOpen]);
 
