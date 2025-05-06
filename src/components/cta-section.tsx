@@ -28,16 +28,7 @@ export function CtaSection() {
             </p>
 
             {/* CTA Button mit direktem Link zu Calendly */}
-            <div className="mx-auto flex justify-center">
-              <a
-                href="https://www.cal.com/thefiles.io/demo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-teal hover:bg-teal/90 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all shadow-lg hover:shadow-xl inline-block"
-              >
-                {t('cta-section.button')}
-              </a>
-            </div>
+            {/* Entfernt: <div className=\"mx-auto flex justify-center\"> ... </div> */}
           </div>
         </div>
       </div>

@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { SystemCheckWelcome } from "@/components/system-check/welcome";
@@ -32,10 +31,10 @@ const initialFormData: SystemCheckFormData = {
   optimizationAreas: [],
   currentBlockers: "",
   customerAcquisition: "",
-  monthlyRevenue: "Weiß ich nicht / möchte ich nicht angeben",
-  priority: "Zeitersparnis",
+  monthlyRevenue: "Don't know / prefer not to say",
+  priority: "Time savings",
   desiredOutcome: "",
-  preferredContact: ["E-Mail"],
+  preferredContact: ["Email"],
   name: "",
   email: "",
   phone: "",
@@ -135,7 +134,7 @@ export function SystemCheckDialog({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-xl p-0 overflow-hidden bg-white/90 backdrop-blur-lg border border-white/20 shadow-lg">
+      <DialogContent className="max-w-[95vw] sm:max-w-xl w-full mx-auto p-0 overflow-hidden bg-white/90 backdrop-blur-lg border border-white/20 shadow-lg rounded-2xl">
         <DialogTitle className="sr-only">System-Check</DialogTitle>
         <div className="p-6">
           {step === "welcome" && (

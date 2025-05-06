@@ -9,7 +9,7 @@ import { ButterflyLogo } from "@/components/butterfly-logo";
 import { Separator } from "@/components/ui/separator";
 import { motion, AnimatePresence } from "framer-motion";
 
-export function Header() {
+export function Header({ onSystemCheckOpenChange }: { onSystemCheckOpenChange?: (open: boolean) => void } = {}) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [showSystemCheck, setShowSystemCheck] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,6 +23,10 @@ export function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (onSystemCheckOpenChange) onSystemCheckOpenChange(showSystemCheck);
+  }, [showSystemCheck, onSystemCheckOpenChange]);
 
   // Close menu when clicking outside
   useEffect(() => {
