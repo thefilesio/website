@@ -136,7 +136,7 @@ export function SystemCheckDialog({
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-[95vw] sm:max-w-xl w-full mx-auto p-0 overflow-hidden bg-white/90 backdrop-blur-lg border border-white/20 shadow-lg rounded-2xl max-h-[90vh] flex flex-col">
         <DialogTitle className="sr-only">System-Check</DialogTitle>
-        <div className="p-6 overflow-y-auto flex-1">
+        <div className="p-6 flex-1">
           {step === "welcome" && (
             <SystemCheckWelcome onNext={handleNext} />
           )}
@@ -183,12 +183,14 @@ export function SystemCheckDialog({
             />
           )}
           {step === "contact" && (
-            <SystemCheckContact
-              value={formData}
-              onChange={updateFormData}
-              onNext={handleSubmitForm}
-              isSubmitting={isSubmitting}
-            />
+            <div className="h-[80vh] max-h-[80vh] overflow-y-auto">
+              <SystemCheckContact
+                value={formData}
+                onChange={updateFormData}
+                onNext={handleSubmitForm}
+                isSubmitting={isSubmitting}
+              />
+            </div>
           )}
           {step === "success" && (
             <SystemCheckSuccess onClose={() => onOpenChange(false)} />

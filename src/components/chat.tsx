@@ -8,12 +8,12 @@ declare global {
 
 export function ChatWidget({ systemCheckOpen = false }: { systemCheckOpen?: boolean }) {
   useEffect(() => {
-    // Wenn SystemCheck offen ist, entferne das Widget komplett
+    // Wenn SystemCheck offen ist, entferne das Widget komplett und setze z-index niedrig
+    const widget = document.querySelector('[id^="AIChatWidget"]');
     if (systemCheckOpen) {
-      // Entferne das Widget-Element
-      const widget = document.querySelector('[id^="AIChatWidget"]');
-      if (widget && widget.parentElement) {
-        widget.parentElement.removeChild(widget);
+      if (widget) {
+        (widget as HTMLElement).style.display = 'none';
+        (widget as HTMLElement).style.zIndex = '1';
       }
       // Entferne das Script
       const script = document.getElementById("ai-chat-widget-script");
@@ -36,10 +36,10 @@ export function ChatWidget({ systemCheckOpen = false }: { systemCheckOpen?: bool
         setTimeout(() => {
           const icon = document.querySelector('[id^="AIChatWidget"] button');
           if (icon) {
-            (icon as HTMLElement).style.width = '36px';
-            (icon as HTMLElement).style.height = '36px';
-            (icon as HTMLElement).style.minWidth = '36px';
-            (icon as HTMLElement).style.minHeight = '36px';
+            (icon as HTMLElement).style.width = '25px';
+            (icon as HTMLElement).style.height = '25px';
+            (icon as HTMLElement).style.minWidth = '25px';
+            (icon as HTMLElement).style.minHeight = '25px';
             (icon as HTMLElement).style.right = '16px';
             (icon as HTMLElement).style.bottom = '16px';
           }
@@ -52,14 +52,28 @@ export function ChatWidget({ systemCheckOpen = false }: { systemCheckOpen?: bool
       setTimeout(() => {
         const icon = document.querySelector('[id^="AIChatWidget"] button');
         if (icon) {
-          (icon as HTMLElement).style.width = '36px';
-          (icon as HTMLElement).style.height = '36px';
-          (icon as HTMLElement).style.minWidth = '36px';
-          (icon as HTMLElement).style.minHeight = '36px';
+          (icon as HTMLElement).style.width = '25px';
+          (icon as HTMLElement).style.height = '25px';
+          (icon as HTMLElement).style.minWidth = '25px';
+          (icon as HTMLElement).style.minHeight = '25px';
           (icon as HTMLElement).style.right = '16px';
           (icon as HTMLElement).style.bottom = '16px';
         }
+        // Wenn das Widget geöffnet ist, passe die Größe und Position an
+        const widget = document.querySelector('[id^="AIChatWidget"]');
+        if (widget) {
+          (widget as HTMLElement).style.maxWidth = '95vw';
+          (widget as HTMLElement).style.right = '8px';
+          (widget as HTMLElement).style.left = 'auto';
+          (widget as HTMLElement).style.bottom = '8px';
+          (widget as HTMLElement).style.overflow = 'auto';
+        }
       }, 500);
+    }
+    // Widget wieder einblenden, falls es noch im DOM ist
+    if (widget) {
+      (widget as HTMLElement).style.display = '';
+      (widget as HTMLElement).style.zIndex = '';
     }
   }, [systemCheckOpen]);
 
