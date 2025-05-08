@@ -11,66 +11,43 @@ import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
 import { LanguageProvider } from "./lib/language-context";
 import { ChatWidget } from "@/components/chat";
-import { SystemCheckModal } from "@/components/SystemCheckModal";
-import { SystemCheckProvider, useSystemCheck } from "@/lib/SystemCheckContext";
 import { useState } from "react";
-import { cn } from "@/lib/utils";
+import { SystemCheckDialog } from "@/components/system-check-dialog";
 
 const queryClient = new QueryClient();
 
 const App = () => {
   const isClient = useIsClient();
+  const [showSystemCheck, setShowSystemCheck] = useState(false);
 
   return (
     <QueryClientProvider client={queryClient}>
       <LanguageProvider>
-        <SystemCheckProvider>
-          <HelmetProvider>
-            <TooltipProvider>
-              <Toaster />
-              <Sonner />
-              {isClient ? (
-                <AppContent />
-              ) : (
-                <div className="min-h-screen flex items-center justify-center">
-                  <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-primary"></div>
-                </div>
-              )}
-            </TooltipProvider>
-          </HelmetProvider>
-        </SystemCheckProvider>
+        <HelmetProvider>
+          <TooltipProvider>
+            <Toaster />
+            <Sonner />
+            {isClient ? (
+              <>
+                <Routes>
+                  <Route path="/" element={<Index />} />
+                  <Route path="/impressum" element={<Imprint />} />
+                  <Route path="/datenschutz" element={<Privacy />} />
+                  <Route path="*" element={<NotFound />} />
+                </Routes>
+                <ChatWidget />
+                <SystemCheckDialog open={showSystemCheck} onOpenChange={setShowSystemCheck} />
+              </>
+            ) : (
+              <div className="min-h-screen flex items-center justify-center">
+                <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-primary"></div>
+              </div>
+            )}
+          </TooltipProvider>
+        </HelmetProvider>
       </LanguageProvider>
     </QueryClientProvider>
   );
-};
-
-const AppContent = () => {
-  const { isOpen } = useSystemCheck();
-
-  return (
-    <>
-      <div
-        className={cn(
-          "transition-all",
-          isOpen ? "pointer-events-none blur-sm" : "pointer-events-auto"
-        )}
-      >
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/impressum" element={<Imprint />} />
-          <Route path="/datenschutz" element={<Privacy />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <ChatWidget />
-      </div>
-      <SystemCheckModalWrapper />
-    </>
-  );
-};
-
-const SystemCheckModalWrapper = () => {
-  const { isOpen, close } = useSystemCheck();
-  return <SystemCheckModal isOpen={isOpen} onClose={close} />;
 };
 
 export default App;
