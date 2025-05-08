@@ -1,3 +1,4 @@
+import { useIsClient } from "@/hooks/useIsClient";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -14,6 +15,10 @@ import { ChatWidget } from "@/components/chat";
 const queryClient = new QueryClient();
 
 const App = () => {
+  const isClient = useIsClient();
+
+  if (!isClient) return null;
+
   return (
     <QueryClientProvider client={queryClient}>
       <LanguageProvider>
