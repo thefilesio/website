@@ -2,19 +2,13 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
-import history from 'connect-history-api-fallback'; // 👈 hinzugefügt
-import { createServer as createMiddlewareServer } from 'vite';
 
+// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  appType: "spa", // 👈 wichtig für Vite-SPA-Routing
   server: {
     host: "::",
     port: 8080,
-    middlewareMode: false,
-    setupMiddlewares: (middlewares) => {
-      // 👇 stellt sicher, dass im Dev-Server alle Pfade auf /index.html fallen
-      middlewares.use(history());
-      return middlewares;
-    },
   },
   plugins: [
     react(),
