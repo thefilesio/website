@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,28 +7,36 @@
     <meta name="description" content="TheFiles.io ist dein Studio für Digitalisierung: Wir gestalten moderne Websites, automatisieren Prozesse und integrieren KI – schnell, klar und messbar." />
     <meta name="author" content="Mert Hasan Demir" />
 
+    <!-- Open Graph -->
     <meta property="og:title" content="TheFiles – Dein digitales Upgrade" />
     <meta property="og:description" content="Modernes Webdesign, Automatisierung & KI – alles aus einer Hand. TheFiles.io baut dir Systeme, die wirken – sichtbar, effizient und zukunftssicher." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://thefiles.io/og-image.png" /> 
+    <meta property="og:image" content="https://thefiles.io/og-image.png" />
     <meta property="og:url" content="https://thefiles.io" />
 
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="TheFiles – Dein digitales Upgrade" />
     <meta name="twitter:description" content="Design. Automation. KI. Alles in einem System – sichtbar, effizient und modular." />
     <meta name="twitter:image" content="https://thefiles.io/og-image.png" />
 
-
-    
+    <!-- Usercentrics Consent -->
     <script src="https://web.cmp.usercentrics.eu/modules/autoblocker.js"></script>
     <script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="jN7ytKACpo6Lo4" async></script>
-  
   </head>
 
   <body>
     <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+
+    <!-- Fallback für Nutzer ohne JS -->
+    <noscript>
+      <strong>Diese Website benötigt JavaScript, um korrekt angezeigt zu werden.</strong>
+    </noscript>
+
+    <!-- GPT Engineer -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-   
+
+    <!-- Vite App Entry -->
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
