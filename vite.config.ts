@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  appType: "spa",
+  appType: "spa", // << WICHTIG
   server: {
     host: "::",
     port: 8080,
@@ -21,8 +21,5 @@ export default defineConfig(({ mode }) => ({
   build: {
     outDir: "dist",
     emptyOutDir: true,
-    rollupOptions: {
-      input: path.resolve(__dirname, "index.html")
-    }
   },
 }));
