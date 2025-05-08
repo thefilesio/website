@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
 
 export function useIsClient() {
-  const [isClient, setIsClient] = useState(typeof window !== "undefined");
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    if (!isClient) {
-      setIsClient(true);
-    }
-  }, [isClient]);
+    setIsClient(true);
+  }, []);
 
   return isClient;
 }
