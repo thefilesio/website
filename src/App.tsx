@@ -13,26 +13,27 @@ import { ChatWidget } from "@/components/chat";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <LanguageProvider>
-      <HelmetProvider>
-        <TooltipProvider>
-          <Toaster />
-          <Sonner />
-          <BrowserRouter>
+const App = () => {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <LanguageProvider>
+        <HelmetProvider>
+          <TooltipProvider>
+            <Toaster />
+            <Sonner />
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/impressum" element={<Imprint />} />
               <Route path="/datenschutz" element={<Privacy />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
-          </BrowserRouter>
-        </TooltipProvider>
-      </HelmetProvider>
-    </LanguageProvider>
-    <ChatWidget />
-  </QueryClientProvider>
-);
+          </TooltipProvider>
+        </HelmetProvider>
+      </LanguageProvider>
+      <ChatWidget />
+    </QueryClientProvider>
+  );
+};
+
 
 export default App;
