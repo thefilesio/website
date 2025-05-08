@@ -1,10 +1,11 @@
+import { useState } from "react";
 import { ButterflyLogo } from "@/components/butterfly-logo";
 import { useLanguage } from "@/lib/language-context";
-import { useSystemCheck } from "@/lib/SystemCheckContext";
+import { SystemCheckDialog } from "@/components/system-check-dialog";
 
 export function CtaSection() {
   const { t } = useLanguage();
-  const { open } = useSystemCheck(); // Globaler Trigger für Modal
+  const [showSystemCheck, setShowSystemCheck] = useState(false);
 
   return (
     <section className="py-20 px-6">
@@ -28,10 +29,10 @@ export function CtaSection() {
               {t("cta-section.subtitle")}
             </p>
 
-            {/* CTA Button: Öffnet das Modal */}
+            {/* CTA Button: Öffnet den SystemCheck */}
             <div className="mx-auto flex justify-center">
               <button
-                onClick={open}
+                onClick={() => setShowSystemCheck(true)}
                 className="bg-teal-500 hover:bg-teal-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition"
               >
                 🚀 {t("cta-section.button")}
@@ -40,6 +41,9 @@ export function CtaSection() {
           </div>
         </div>
       </div>
+
+      {/* SystemCheckDialog anzeigen */}
+      <SystemCheckDialog open={showSystemCheck} onOpenChange={setShowSystemCheck} />
     </section>
   );
 }
