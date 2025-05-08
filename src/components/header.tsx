@@ -2,33 +2,26 @@ import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Home, BarChart, DollarSign, Users } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { SystemCheckDialog } from "@/components/system-check-dialog";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { useLanguage } from "@/lib/language-context";
 import { ButterflyLogo } from "@/components/butterfly-logo";
-import { Separator } from "@/components/ui/separator";
 import { motion, AnimatePresence } from "framer-motion";
+import { useSystemCheck } from "@/lib/SystemCheckContext";
 
-export function Header({ onSystemCheckOpenChange }: { onSystemCheckOpenChange?: (open: boolean) => void } = {}) {
+export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [showSystemCheck, setShowSystemCheck] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { t } = useLanguage();
+  const { open: openSystemCheck } = useSystemCheck();
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-    
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    if (onSystemCheckOpenChange) onSystemCheckOpenChange(showSystemCheck);
-  }, [showSystemCheck, onSystemCheckOpenChange]);
-
-  // Close menu when clicking outside
   useEffect(() => {
     if (isMenuOpen) {
       const handleClickOutside = (e: MouseEvent) => {
@@ -63,7 +56,7 @@ export function Header({ onSystemCheckOpenChange }: { onSystemCheckOpenChange?: 
             )}>TheFiles</span>
           </a>
         </div>
-        
+
         <nav className="hidden sm:flex items-center justify-center gap-12">
           <a href="#services" className="text-base font-medium text-foreground/80 hover:text-primary transition-colors">
             {t('header.services')}
@@ -78,13 +71,13 @@ export function Header({ onSystemCheckOpenChange }: { onSystemCheckOpenChange?: 
             {t('header.references')}
           </a>
         </nav>
-        
+
         <div className="hidden sm:flex items-center gap-3 justify-end flex-1">
           <LanguageSwitcher />
           <Button 
             variant="outline" 
             size="sm"
-            onClick={() => setShowSystemCheck(true)}
+            onClick={openSystemCheck}
           >
             {t('header.system-check')}
           </Button>
@@ -103,11 +96,10 @@ export function Header({ onSystemCheckOpenChange }: { onSystemCheckOpenChange?: 
             </Button>
           </a>
         </div>
-        
+
         {/* Mobile menu controls */}
         <div className="flex sm:hidden items-center gap-2 justify-end">
-          <LanguageSwitcher /> {/* Language switcher moved outside menu */}
-          
+          <LanguageSwitcher />
           <button 
             className="flex items-center justify-center h-10 w-10 text-foreground rounded-full bg-white/80 shadow-sm"
             onClick={() => setIsMenuOpen(true)}
@@ -116,8 +108,8 @@ export function Header({ onSystemCheckOpenChange }: { onSystemCheckOpenChange?: 
           </button>
         </div>
       </div>
-      
-      {/* New Slide-Down Mobile Menu */}
+
+      {/* Slide-Down Mobile Menu */}
       <AnimatePresence>
         {isMenuOpen && (
           <div 
@@ -147,45 +139,29 @@ export function Header({ onSystemCheckOpenChange }: { onSystemCheckOpenChange?: 
                   <X size={18} />
                 </button>
               </div>
-              
+
               {/* Menu Content */}
               <div className="py-6 px-4 flex-grow overflow-y-auto">
                 <nav className="flex flex-col items-center justify-center space-y-5">
-                  <a 
-                    href="#services" 
-                    className="py-3 px-5 text-lg font-medium text-foreground/80 hover:text-primary transition-colors flex items-center gap-3"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
+                  <a href="#services" onClick={() => setIsMenuOpen(false)} className="py-3 px-5 text-lg font-medium text-foreground/80 hover:text-primary transition-colors flex items-center gap-3">
                     <Home size={18} className="text-primary/70" />
                     {t('header.services')}
                   </a>
-                  <a 
-                    href="#process" 
-                    className="py-3 px-5 text-lg font-medium text-foreground/80 hover:text-primary transition-colors flex items-center gap-3"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
+                  <a href="#process" onClick={() => setIsMenuOpen(false)} className="py-3 px-5 text-lg font-medium text-foreground/80 hover:text-primary transition-colors flex items-center gap-3">
                     <BarChart size={18} className="text-primary/70" />
                     {t('header.process')}
                   </a>
-                  <a 
-                    href="#pricing" 
-                    className="py-3 px-5 text-lg font-medium text-foreground/80 hover:text-primary transition-colors flex items-center gap-3"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
+                  <a href="#pricing" onClick={() => setIsMenuOpen(false)} className="py-3 px-5 text-lg font-medium text-foreground/80 hover:text-primary transition-colors flex items-center gap-3">
                     <DollarSign size={18} className="text-primary/70" />
                     {t('header.pricing')}
                   </a>
-                  <a 
-                    href="#testimonials" 
-                    className="py-3 px-5 text-lg font-medium text-foreground/80 hover:text-primary transition-colors flex items-center gap-3"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
+                  <a href="#testimonials" onClick={() => setIsMenuOpen(false)} className="py-3 px-5 text-lg font-medium text-foreground/80 hover:text-primary transition-colors flex items-center gap-3">
                     <Users size={18} className="text-primary/70" />
                     {t('header.references')}
                   </a>
                 </nav>
               </div>
-              
+
               {/* Menu Footer */}
               <div className="p-6 border-t border-gray-100 flex flex-row items-center justify-center gap-4">
                 <Button 
@@ -193,7 +169,7 @@ export function Header({ onSystemCheckOpenChange }: { onSystemCheckOpenChange?: 
                   size="sm"
                   onClick={() => {
                     setIsMenuOpen(false);
-                    setShowSystemCheck(true);
+                    openSystemCheck();
                   }}
                   className="px-4 py-2 rounded-full hover:shadow-md transition-all"
                 >
@@ -219,11 +195,6 @@ export function Header({ onSystemCheckOpenChange }: { onSystemCheckOpenChange?: 
           </div>
         )}
       </AnimatePresence>
-      
-      <SystemCheckDialog 
-        open={showSystemCheck} 
-        onOpenChange={setShowSystemCheck} 
-      />
     </header>
   );
 }
