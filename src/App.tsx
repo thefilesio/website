@@ -11,6 +11,11 @@ import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
 import { LanguageProvider } from "./lib/language-context";
 import { ChatWidget } from "@/components/chat";
+import { useState } from "react";
+import { SystemCheckModal } from "@/components/SystemCheckModal";
+
+const [systemCheckOpen, setSystemCheckOpen] = useState(false);
+
 
 const queryClient = new QueryClient();
 
