@@ -17,8 +17,6 @@ const queryClient = new QueryClient();
 const App = () => {
   const isClient = useIsClient();
 
-  if (!isClient) return null;
-
   return (
     <QueryClientProvider client={queryClient}>
       <LanguageProvider>
@@ -26,16 +24,22 @@ const App = () => {
           <TooltipProvider>
             <Toaster />
             <Sonner />
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/impressum" element={<Imprint />} />
-              <Route path="/datenschutz" element={<Privacy />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+            {isClient ? (
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/impressum" element={<Imprint />} />
+                <Route path="/datenschutz" element={<Privacy />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            ) : (
+              <div className="min-h-screen flex items-center justify-center">
+                <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-primary"></div>
+              </div>
+            )}
           </TooltipProvider>
         </HelmetProvider>
       </LanguageProvider>
-      <ChatWidget />
+      {isClient && <ChatWidget />}
     </QueryClientProvider>
   );
 };
