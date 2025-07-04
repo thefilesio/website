@@ -32,15 +32,16 @@
       ]
     },
     "outreach": {
-      "title": "Old Lead Outreach Package",
-      "description": "For companies looking to reactivate old contacts",
-      "price": "from €49 per appointment",
+      "title": "Design Subscription Package",
+      "description": "For companies that need high-quality designs on a regular basis",
+      "price": "from €1,700 / month",
+      "trial": "7 days free trial",
       "features": [
-        "Setup of outreach flow (Email + LinkedIn)",
-        "Text templates, follow-up logic, CRM connection",
-        "Integration with HubSpot / Make / Clay",
-        "Pay-per-appointment model: → You only pay for qualified appointments",
-        "Optional: KPI dashboard & analytics"
+        "Access to 100+ design services (social media, presentations, ads, and more)",
+        "Personal art director",
+        "24h turnaround for simple designs",
+        "Unlimited revisions & users",
+        "🕒 Flexible terms, cancel anytime"
       ]
     },
     "chatbot": {
