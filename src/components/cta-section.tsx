@@ -33,7 +33,7 @@ export function CtaSection() {
             <div className="mx-auto flex justify-center">
               <button
                 onClick={() => setShowSystemCheck(true)}
-                className="bg-teal-500 hover:bg-teal-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition"
+                className="bg-teal-500 hover:bg-teal-600 text-foreground font-semibold py-3 px-6 rounded-lg shadow-md transition"
               >
                 🚀 {t("cta-section.button")}
               </button>
