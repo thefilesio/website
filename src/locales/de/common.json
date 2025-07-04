@@ -22,25 +22,27 @@
     "webpage": {
       "title": "Webpage Paket",
       "description": "Für Unternehmen, die einen klaren, modernen Auftritt wollen",
-      "price": "ab 499 €",
+      "price": "ab 999 €",
       "features": [
-        "Responsive Website (bis 5 Seiten)",
+        "Responsive Website",
         "Mobil- & SEO-optimiert",
         "Strukturierte Design-Logik",
         "1x Strategie-Call zur Seitenstruktur",
-        "Optional: Erweiterbar um CMS, Animation & Add-ons"
+        "Optional: Erweiterbar um CMS, Animation & Add-ons",
+        "Vollständig und beliebig anpassbar nach Ihren Wünschen"
       ]
     },
     "outreach": {
-      "title": "Old Lead Outreach Paket",
-      "description": "Für Unternehmen, die alte Kontakte wieder aktivieren wollen",
-      "price": "ab 49 € pro Termin",
+      "title": "Design Abo Paket",
+      "description": "Für Unternehmen, die regelmäßig hochwertige Designs benötigen",
+      "price": "ab 1.700 € / Monat",
+      "trial": "7 Tage kostenlose Testphase",
       "features": [
-        "Setup eines Outreach-Flows (E-Mail + LinkedIn)",
-        "Textvorlagen, Follow-up-Logik, CRM-Anbindung",
-        "Integration mit HubSpot / Make / Clay",
-        "Pay-per-Appointment Modell: → Du zahlst nur für qualifizierte Termine",
-        "Optional: KPI-Dashboard & Analytics"
+        "Zugriff auf 100+ Design-Leistungen (Social Media, Präsentationen, Ads, uvm.)",
+        "Persönlicher Art Director",
+        "24h Turnaround bei einfachen Designs",
+        "Unbegrenzte Revisionen",
+        "\"Wir ersetzen Ihr Designteam für einen Bruchteil des Geldes!\""
       ]
     },
     "chatbot": {
