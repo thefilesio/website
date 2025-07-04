@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Check, Monitor, Mail, Bot } from "lucide-react";
+import { Check, Monitor, Mail, Bot, Brush } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ButterflyLogo } from "@/components/butterfly-logo";
 import { useLanguage } from "@/lib/language-context";
@@ -20,8 +20,9 @@ export function PricingSection() {
       name: t('packages.outreach.title'),
       description: t('packages.outreach.description'),
       price: t('packages.outreach.price'),
+      trial: t('packages.outreach.trial'),
       features: tArray('packages.outreach.features'),
-      icon: <Mail />,
+      icon: <Brush />, // Icon bleibt
     },
     {
       name: t('packages.chatbot.title'),
@@ -62,6 +63,7 @@ interface PricingCardProps {
     name: string;
     description: string;
     price: string;
+    trial?: string;
     features: string[];
     icon: React.ReactNode;
   };
@@ -81,7 +83,7 @@ function PricingCard({ plan, isSelected, onClick }: PricingCardProps) {
   const getBookingUrl = (planName: string) => {
     const name = planName.toLowerCase();
     if (name.includes("webpage")) return "https://cal.com/thefiles.io/webpage";
-    if (name.includes("outreach")) return "https://cal.com/thefiles.io/leads";
+    if (name.includes("design abo") || name.includes("design subscription")) return "https://cal.com/thefiles.io/design-abo";
     if (name.includes("chatbot")) return "https://cal.com/thefiles.io/ki";
     return "#";
   };
@@ -103,17 +105,30 @@ function PricingCard({ plan, isSelected, onClick }: PricingCardProps) {
 
         <p className="text-foreground/80 mb-6">{plan.description}</p>
 
-        <div className="flex items-baseline mb-8">
+        <div className="flex items-baseline mb-8 flex-col items-start">
           <span className="text-4xl font-bold">{plan.price}</span>
+          {plan.trial && (
+            <span className="text-sm text-foreground/60 mt-1">{plan.trial}</span>
+          )}
         </div>
 
         <ul className="space-y-3">
-          {plan.features.map((feature, index) => (
-            <li key={index} className="flex items-start gap-2">
-              <Check size={18} className="text-primary mt-[2px]" />
-              <span className="text-sm">{feature}</span>
-            </li>
-          ))}
+          {plan.features.map((feature, index) => {
+            if (feature.startsWith('"')) {
+              // Catchphrase: kursiv und mittig, kein BrushStroke
+              return (
+                <li key={index} className="w-full flex flex-col items-center mt-2">
+                  <span className="text-sm font-semibold text-foreground italic text-center w-full">{feature}</span>
+                </li>
+              );
+            }
+            return (
+              <li key={index} className="flex items-center gap-2">
+                <Check size={20} className="text-primary flex-shrink-0" />
+                <span className="text-sm">{feature}</span>
+              </li>
+            );
+          })}
         </ul>
       </div>
 
